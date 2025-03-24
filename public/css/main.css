@@ -1,0 +1,182 @@
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+table,
+td,
+tr {
+  font-family: "Noto Serif JP",serif
+  }
+.news_item,
+  .sub_ttl,
+    h1 {
+      text-align: center
+      }
+    .news_item {
+      background-color: #f6c6a2;
+      border-radius: 14px;
+      width: 6em;
+      margin-left: 20px
+      }
+    .arrow,
+      .arrow::after {
+        height: 1px;
+        background-color: #707070;
+        position: absolute;
+        right: 0
+        }
+      .sub_ttl {
+        font-size: 30px;
+        margin-bottom: 40px
+        }
+      html {
+        scroll-behavior: smooth
+        }
+      .news {
+        padding: 50px 0
+        }
+      .inner {
+        width: 70%;
+        margin: 0 auto;
+        padding: 65px 0 100px
+        }
+      .news_list {
+        margin: 0 5%
+        }
+      .news_list_item {
+        padding: 25px 0;
+        border-bottom: 1px solid #e6e6e6
+        }
+      .news_list_item:first-child {
+        border-top: 1px solid #e6e6e6
+        }
+      .news_list_item a {
+        position: relative;
+        display: flex;
+        padding-right: 30px
+        }
+      .news_list_date {
+        font-size: 15px;
+        display: flex;
+        margin-right: 15px;
+        align-items: center
+        }
+      .arrow {
+        width: 25px;
+        top: 50%
+        }
+      .arrow::after {
+        content: "";
+        display: block;
+        width: 6px;
+        transform: rotate(45deg);
+        bottom: 2px
+        }
+      .footer-001 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px 10px 10px;
+        background-color: #000
+        }
+      .footer-001__logo {
+        width: 130px;
+        height: 30px
+        }
+      .footer-001__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0;
+        column-gap: 1.5em;
+        list-style-type: none;
+        margin: 0 0 .5em;
+        padding: .5em
+          }
+        .footer-001__link {
+          color: #fff;
+          font-weight: 200;
+          text-decoration-line: none;
+          text-decoration-thickness: initial;
+          text-decoration-style: initial;
+          text-decoration-color: initial
+          }
+        .footer-001__copyright {
+          margin: 0;
+          color: rgba(255,255,255,.7);
+          font-weight: 200;
+          font-size: .8em
+            }
+          #contents {
+            height: 600px
+            }
+          .main_imgBox {
+            height: 750px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: relative
+            }
+          .main_img {
+            z-index: 10;
+            opacity: 0;
+            width: 100%;
+            height: 750px;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: 36s infinite anime;
+            animation-timeline: auto;
+            animation-range-start: normal;
+            animation-range-end: normal
+            }
+          .main_img:nth-of-type(2) {
+            animation-delay: 6s
+            }
+          .main_img:nth-of-type(3) {
+            animation-delay: 12s
+            }
+          .main_img:nth-of-type(4) {
+            animation-delay: 18s
+            }
+          .main_img:nth-of-type(5) {
+            animation-delay: 24s
+            }
+          .main_img:nth-of-type(6) {
+            animation-delay: 30s
+            }
+          @keyframes anime {
+            0%,
+            100% {
+            opacity: 0
+            }
+          17%,
+          8% {
+          opacity: 1
+          }
+        25% {
+        opacity: 0;
+        transform: scale(1.07);
+        z-index: 9
+        }
+      }
+    .back::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0,0,0,0.2);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
